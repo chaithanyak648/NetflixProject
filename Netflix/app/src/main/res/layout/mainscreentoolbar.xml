@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#000"
+        android:theme="@style/Theme.AppCompat.Light.Dialog"
+        >
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000">
+
+
+
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpagerswipescreen"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_marginTop="57dp"
+                >
+
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/sliderdots"
+                android:layout_below="@id/viewpagerswipescreen"
+                android:layout_width="259dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="2dp"
+
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                >
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/getstarted"
+                android:layout_width="374dp"
+                android:layout_height="62dp"
+                android:layout_below="@id/sliderdots"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/activedots"
+                android:gravity="center_horizontal"
+                android:text="GET STARTED"
+
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="20dp">
+
+            </Button>
+
+
+            <ImageView
+                android:id="@+id/netflixlogo"
+                android:layout_width="139dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/ic_netflix_icon_text"></ImageView>
+
+
+            <TextView
+                android:id="@+id/movietooltext"
+                android:layout_width="109dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/netflixlogo"
+                android:text="Movies"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvseriestooltext"
+                android:layout_width="109dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/netflixlogo"
+                android:text="TvSeries"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+</merge>

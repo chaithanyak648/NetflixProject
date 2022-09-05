@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PaymentGateway">
+    <include
+        android:id="@+id/include4"
+        layout="@layout/paymenttoolbar"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout3"
+        android:layout_width="432dp"
+        android:layout_height="775dp"
+        android:layout_marginTop="72dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteY="86dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="392dp"
+            android:layout_height="134dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/step3of3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="STEP 3 OF 3"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Set up your  credit or  debit card."
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/visacard" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/americanexpress" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/mastercard" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/lastcard" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="335dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="#FFF"
+            android:padding="1dp"
+            android:textColorHint="#000"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:hintTextColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.346"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstnameedittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_stroke"
+                android:hint="First Name"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="20dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="335dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="#FFF"
+            android:padding="1dp"
+            android:textColorHint="#000"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:hintTextColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.346">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastnameedittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_stroke"
+                android:hint="Last Name"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="20dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="335dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="#FFF"
+            android:padding="1dp"
+            android:textColorHint="#000"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:hintTextColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.346">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contactnumberedittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_stroke"
+                android:hint="ContactNumber"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="20dp"
+                android:inputType="number">
+
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <LinearLayout
+            android:id="@+id/hori"
+            android:layout_width="382dp"
+            android:layout_height="93dp"
+            android:background="@drawable/linearlayoutstroke"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp" >
+        <LinearLayout
+            android:id="@+id/ver"
+            android:layout_marginLeft="5dp"
+            android:background="#BFBABA"
+            android:layout_width="235dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="93dp"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:layout_width="140dp"
+                android:id="@+id/CostToset"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:text="₹349/month"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="90dp"
+                android:id="@+id/plannametoset"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:text="Basic"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="91dp"
+            android:id="@+id/Change"
+            android:layout_height="40dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="10dp"
+            android:text="Change"
+            android:textStyle="bold"
+            android:textColor="#2979FF"/>
+        </LinearLayout>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="5dp"/>
+        <TextView
+            android:id="@+id/typetoputurltext"
+            android:layout_width="345dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="By checking below,you agree to our Terms of Use,Privacy Statement,and that you are over 18.Netflix will automatically continue membership and charge the monthly membership fee to your payment method until you cancel.You may cancel at any time to avoid feature charges."/>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="143dp"
+            android:layout_height="37dp"
+            android:id="@+id/iagree"
+            android:layout_marginLeft="35dp"
+            android:textSize="20dp"
+            android:buttonTint="#000"
+            android:textColor="#000"
+            android:text="I agree." />
+
+        <Button
+            android:id="@+id/startmembershipbutton"
+            android:layout_width="339dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="40dp"
+            android:backgroundTint="@color/activedots"
+            android:text="START MEMBERSHIP"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
